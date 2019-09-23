@@ -39,7 +39,7 @@ namespace TeamAssignment1.Controllers
             ViewBag.Teams += "<th>Points</th>";
             ViewBag.Teams += "</tr>";
 
-            foreach (SoccerTeam sTeam in lstSorted)
+            foreach (SoccerTeam sTeam in lstSorted) 
             {
 
                 ViewBag.Teams += "<tr>";
@@ -49,7 +49,7 @@ namespace TeamAssignment1.Controllers
                 ViewBag.Teams += "</tr>";
             }
 
-            ViewBag.Teams += "</table>";
+            ViewBag.Teams += "</table> I submitted changes";
                         
 
             return View();
