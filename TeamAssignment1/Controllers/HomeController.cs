@@ -29,16 +29,18 @@ namespace TeamAssignment1.Controllers
             lstTeamNames.Add(new SoccerTeam("LA Galaxy", 37));
             lstTeamNames.Add(new SoccerTeam("LAFC", 39));
 
-            //lstSorted = lstTeamNames.OrderByDescending(sTeam => sTeam.iPoints).ToList();
+            //Sort teams by points
             List<SoccerTeam> lstSorted = lstTeamNames.OrderByDescending(sTeam => sTeam.iPoints).ToList();
 
+            //Create the table and headings
             ViewBag.Teams += "<table>";
             ViewBag.Teams += "<tr>";
             ViewBag.Teams += "<th>Ranking</th>";
             ViewBag.Teams += "<th>Team Name</th>";
             ViewBag.Teams += "<th>Points</th>";
             ViewBag.Teams += "</tr>";
-
+            
+            //Input the data into the table
             foreach (SoccerTeam sTeam in lstSorted) 
             {
 
