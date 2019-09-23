@@ -49,7 +49,7 @@ namespace TeamAssignment1.Controllers
                 ViewBag.Teams += "</tr>";
             }
 
-            ViewBag.Teams += "</table> I submitted changes";
+            ViewBag.Teams += "</table>";
                         
 
             return View();
