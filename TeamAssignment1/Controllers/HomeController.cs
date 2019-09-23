@@ -12,10 +12,10 @@ namespace TeamAssignment1.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            List<SoccerTeam> lstTeamNames = new List<SoccerTeam>();
-            //List<SoccerTeam> lstSorted = new List<SoccerTeam>();
+            List<SoccerTeam> lstTeamNames = new List<SoccerTeam>();            
             int iTeamRank = 0;
 
+            //Add the team names and points into the list
             lstTeamNames.Add(new SoccerTeam("RSL", 35));
             lstTeamNames.Add(new SoccerTeam("Colorado", 24));
             lstTeamNames.Add(new SoccerTeam("FC Dallas", 42));
