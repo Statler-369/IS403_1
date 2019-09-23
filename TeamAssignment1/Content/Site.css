@@ -18,6 +18,10 @@ textarea {
     max-width: 280px;
 }
 
+h2{
+    text-align: "center";
+    color: cyan;
+}
 
 /*Formant the table and each of the rows.*/
 table, th, td {
